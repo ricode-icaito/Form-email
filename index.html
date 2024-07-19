@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Form-Email</title>
+</head>
+<body>
+
+  <div class="form-content">
+
+    <h2>Enviar formulario</h2>
+
+    <form action="https://formsubmit.co/rickidios05@gmail.com" method="POST">
+
+      <label for="name">Nombre</label>
+      <input type="text" name="name" id="name">
+
+      <label for="email">Correo</label>
+      <input type="email" name="email" id="email">
+
+      <label for="subject">Asunto</label>
+      <input type="text" name="subject" id="subject">
+
+      <label for="coments">Comentario</label>
+      <textarea name="coments" id="coments" ols="30" rows="5"></textarea>
+
+      <input class="btn" type="submit" value="Enviar">
+
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+
+      <input type="hidden" name="_captcha" value="false">
+
+    </form>
+  </div>
+</body>
+</html>
